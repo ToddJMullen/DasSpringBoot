@@ -55,5 +55,13 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    
+<!--     Add config processor as per complaint when adding @ConfigurationProperties -->
+<!--     in ...config.PersistenceConfiguration.java -->
+    <dependency>
+    	<groupId>org.springframework.boot</groupId>
+    	<artifactId>spring-boot-configuration-processor</artifactId>
+    	<optional>true</optional>
+    </dependency>
   </dependencies>
 </project>
