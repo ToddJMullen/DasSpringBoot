@@ -1,7 +1,17 @@
 package com.boot.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Shipwreck {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	Long id;
+//	@Column(name="NAME" ... other data ...)
+//	^^^ not needed because the columns match
 	String name;
 	String description;
 	String condition;
