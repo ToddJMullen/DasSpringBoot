@@ -8,6 +8,6 @@ public class HomeController {
 
 	@RequestMapping("/")
 	public String home() {
-		return "This is the Das Spring Boot HomeController::home() / RequestMapping";
+		return "This is the Das Spring Boot HomeController::home()";
 	}
 }
